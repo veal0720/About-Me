@@ -6,7 +6,7 @@ I build an app with a direct and powerful purpose. It does all of the things tha
 
 ### Author: Ruthann Veal
 
-### Links and Resources
+### Links and Resources 
 
 * [submission PR](http://xyz.com)
 * Any Links you used as reference
