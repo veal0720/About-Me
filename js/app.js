@@ -16,19 +16,22 @@ alert('Welcome to my About Me web site, ' + userName);
 
 // 5 yes or no questions
 
-
-
-let questionOne = prompt('Do I work at amazon? Please answer with Yes or No or y or n').toLowerCase();
-console.log('Q 1 ', questionOne);
-if(questionOne === 'yes' || questionOne === 'y'){
-//correct
-  alert('Thats right, I do work there');
-} else if(questionOne === 'no' || questionOne === 'n'){
-//incorrect
-  alert('That is not correct, I do work there. Better luck next time.');
-} else {
-  alert('Doesnt look like you know....');
+//lab 4 requ
+function question1(){
+  let questionOne = prompt('Do I work at amazon? Please answer with Yes or No or y or n').toLowerCase();
+  console.log('Q 1 ', questionOne);
+  if(questionOne === 'yes' || questionOne === 'y'){
+    //correct
+    alert('Thats right, I do work there');
+  } else if(questionOne === 'no' || questionOne === 'n'){
+    //incorrect
+    alert('That is not correct, I do work there. Better luck next time.');
+  } else {
+    alert('Doesnt look like you know....');
+  }
 }
+question1();
+
 
 
 
