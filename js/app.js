@@ -38,7 +38,7 @@ console.log('Q 2, questionTwo');
 if(questionTwo === 'yes' || questionTwo === 'y'){
     // correct
     alert('Thats right, I do like pets);
-} else if (questionTwo === 'no' || questionTwo === 'n'){
+} else if{ (questionTwo === 'no' || questionTwo === 'n'){
     // incorrect
     alert('That is not correct, I do like pets. Better luck next time.');
 } else {
