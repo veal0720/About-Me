@@ -35,7 +35,7 @@ question1();
 function question2(){
 let questionTwo = prompt('Do I like pets? Please answer with Yes or No or y or n').toLowerCase();
 console.log('Q 2, questionTwo');
-if(question === 'yes' || questionTwo === 'y'){
+if(questionTwo === 'yes' || questionTwo === 'y'){
     // correct
     alert('Thats right, I do like pets);
 } else if (questionTwo === 'no' || questionTwo === 'n'){
@@ -49,10 +49,10 @@ question3();
 function question3(){
     Let questionThree = prompt('Do I like sports? Please answer with Yes or No y or no').toLowerCase();
     console.log('Q 3, questionThree');
-    if(question === 'yes' || questionThree === 'y'){
+    if(questionThree === 'yes' || questionThree === 'y'){
         // correct
         alert('Thats right, I do like sports');
-    }else if{(questionThree === 'no' || questionThree === 'n)'{
+    }else if{(questionThree === 'no' || questionThree === 'n'){
         // incorrect
         alert('That is not correct, I do like sports. Better luck next time');
     } else{
@@ -60,10 +60,31 @@ function question3(){
     }
     
     function question4(){
-        let questionFour
-    }
+        let questionFour = prompt('Do I like soulfood? Please answer with Yes or No y or no').toLowerCase();
+        console.log('Q 4, questionFour');
+        if(questionFour === 'yes' || questionFour === 'y'){
+            // correct
+            alert('Thats right, I do like soulfood');
+        }else if{(questionFour === 'no' || questionFour === 'n'){
+            // incorrect
+            alert('Doesnt look like you know...');
+        }
+    
+        function question5(){
+            let questionFive = prompt('Is my favorite soulfood Gumbo? Please answer with Yes or No y or no').toLowerCase();
+            console.log ('Q 5, questionFive');
+            if (questionFive === 'yes' || questionFive === 'y'){
+                // correct
+                alert('Thats right, Gumbo is my favorit soulfood');
+            }else if{(questionFive === 'no' || questionFive === 'n'){
+                // incorrect
+                alert('Doesnt look like you know...');
+            }
 
-    }
+            }
+            }
+        }
+    
 
 
 
