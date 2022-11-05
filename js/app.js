@@ -32,6 +32,39 @@ function question1(){
 }
 question1();
 
+function question2(){
+let questionTwo = prompt('Do I like pets? Please answer with Yes or No or y or n').toLowerCase();
+console.log('Q 2, questionTwo');
+if(question === 'yes' || questionTwo === 'y'){
+    // correct
+    alert('Thats right, I do like pets);
+} else if (questionTwo === 'no' || questionTwo === 'n'){
+    // incorrect
+    alert('That is not correct, I do like pets. Better luck next time.');
+} else {
+alert('Doesnt look like you know...');
+}
+question3();
+
+function question3(){
+    Let questionThree = prompt('Do I like sports? Please answer with Yes or No y or no').toLowerCase();
+    console.log('Q 3, questionThree');
+    if(question === 'yes' || questionThree === 'y'){
+        // correct
+        alert('Thats right, I do like sports');
+    }else if{(questionThree === 'no' || questionThree === 'n)'{
+        // incorrect
+        alert('That is not correct, I do like sports. Better luck next time');
+    } else{
+        alert('Doesnt look like you know...');
+    }
+    
+    function question4(){
+        let questionFour
+    }
+
+    }
+
 
 
 
