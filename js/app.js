@@ -101,7 +101,7 @@ function question6(){
   //  if the guess is “too high” or “too low”.
   //  It should give the user exactly four opportunities
   //  After all attempts have been exhausted, tell the user the correct answer.
-
+ 
 
 }
 
