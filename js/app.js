@@ -6,19 +6,19 @@ console.log('app js connected');
 
 
 
-let userName = prompt('Welcome to my guessing game. Whats your name?');
-while(!userName){
-  userName = prompt('No, really. I need a name, thanks.');
-  console.log(userName);
-}
-alert('Welcome to my About Me web site, ' + userName);
+// let userName = prompt('Welcome to my guessing game. Whats your name?');
+// while(!userName){
+//   userName = prompt('No, really. I need a name, thanks.');
+//   // console.log(userName);
+// }
+// alert('Welcome to my About Me web site, ' + userName);
 
 // 5 yes or no questions
 
 
 function question1(){
   let questionOne = prompt('Do I work at amazon? Please answer with Yes or No or y or n').toLowerCase();
-  console.log('Q 1 ', questionOne);
+  // console.log('Q 1 ', questionOne);
   if(questionOne === 'yes' || questionOne === 'y'){
     //correct
     alert('Thats right, I do work there');
@@ -29,7 +29,7 @@ function question1(){
     alert('Doesnt look like you know....');
   }
 }
-question1();
+// question1();
 ////////////////////////////////////////
 
 function question2(){
@@ -43,7 +43,7 @@ function question2(){
     alert('Doesnt look like you know...');
   }
 }
-question2();
+// question2();
 ////////////////////////////////////////
 
 function question3(){
@@ -57,7 +57,7 @@ function question3(){
     alert('Doesnt look like you know...');
   }
 }
-question3();
+// question3();
 ////////////////////////////////////////
 
 
@@ -72,7 +72,7 @@ function question4(){
     alert('Doesnt look like you know...');
   }
 }
-question4();
+// question4();
 
 ////////////////////////////////////////
 
@@ -87,21 +87,50 @@ function question5(){
     alert('Doesnt look like you know...');
   }
 }
-question5();
+// question5();
 
 ////////////////////////////////////////
 
 
 
 function question6(){
-  console.log('we made it to q 6.');
+  // console.log('we made it to q 6.');
 
   //see js file for q-6.js
   //  Add a 6th question to the guessing game that takes in a numeric input by prompting the user to guess a number.
   //  if the guess is “too high” or “too low”.
   //  It should give the user exactly four opportunities
   //  After all attempts have been exhausted, tell the user the correct answer.
- 
+  let randomNumber = Math.floor(Math.random() * 10) + 1;
+  console.log('do we get a random num: ',randomNumber);
+  let opportunities = 4;
+  console.log(opportunities);
+
+
+  //right here.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 }
 
@@ -109,7 +138,7 @@ question6();
 
 
 function question7(){
-  console.log('we made it to q 7.');
+  // console.log('we made it to q 7.');
   //  https://github.com/DeltaVCode/cedarrapids-code-201n4/blob/main/class-05/demo/js/demo-Monday.js
   //multiple possible correct answers that are stored in an array.
   //Give the user 6 attempts to guess the correct answer.
