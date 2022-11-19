@@ -129,7 +129,7 @@ function question6(){
   //right here
 }
 
-question6();
+// question6();
 
 
 function question7(){
@@ -142,7 +142,38 @@ function question7(){
   // As a user, I would like to know my final score so that I can know how well I did.
   // At the end tell them how many they got correct out of the 7 questions asked.
 
+  // Question 7
+  let userPoints = 0;
+  let answers = [
+    'gumbo',
+    'greens',
+    'grits'
+  ];
 
+  let attempts = 0;
+  let correctAnswer = false;
+  while (attempts !== 3 && correctAnswer === false) {
+
+    let response = prompt('What soulfood do I like');
+    let responseToLowerCase = response.toLowerCase();
+    if (answers.indexOf(responseToLowerCase) >= 0) {
+      userPoints++;
+      console.log('user submitted a answer', response);
+      correctAnswer = true;
+      alert(
+        'Correct, ' +
+          response +
+          ' is one of my favorite soulfoods to eat. Grits, greens, gumbo are all of some of my favorite soulfoods.'
+      );
+      attempts = 3;
+    } else {
+      alert('That is not one of my favorites.');
+      
+    }
+    attempts++;
+    console.log('Logging all answers', answers);
+    console.log('points:', userPoints);
+  }
 }
 
-// question7();
+question7();
