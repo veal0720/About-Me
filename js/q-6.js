@@ -14,9 +14,9 @@
 *that we get a 0. But adding the one guarantees that our
 *lowest number will never be lower than 1.*/
 function questionSix(){
-  let randoNum = Math.floor(Math.random() * 10) + 1;
-  let opportunities = 4;
-  let robotVoice = 'Guess a integer from 1 to 10!';
+  let randoNum = Math.floor(Math.random() * 20) + 1;
+  let opportunities = 10;
+  let robotVoice = 'Guess a integer from 1 to 20!';
 
   /*beggining of while loop checks the condition to see if there are any turns left. */
   while (opportunities > 0) {
@@ -59,6 +59,5 @@ function questionSix(){
   alert('The Random number Generator choose ' + randoNum + ' as it\'s number .');
 
 }
-
 
 questionSix();

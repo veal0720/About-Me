@@ -94,44 +94,39 @@ function question5(){
 
 
 function question6(){
-  // console.log('we made it to q 6.');
+  console.log('we made it to q 6.');
 
   //see js file for q-6.js
   //  Add a 6th question to the guessing game that takes in a numeric input by prompting the user to guess a number.
   //  if the guess is “too high” or “too low”.
-  //  It should give the user exactly four opportunities
+  //  It should give the user exactly four guesses
   //  After all attempts have been exhausted, tell the user the correct answer.
+
   let randomNumber = Math.floor(Math.random() * 10) + 1;
   console.log('do we get a random num: ',randomNumber);
-  let opportunities = 4;
-  console.log(opportunities);
+  let guesses = 4;
+  console.log(guesses);
 
+  while (guesses > 0){
+    let response = parseInt(prompt('Guess a number between 1 - 10'));
+    if (response === randomNumber ){
+      alert('This is the correct number');
+      console.log('correct');
+      break;
+    }else if(response < randomNumber) {
+      alert('Your guess is to low');
 
-  //right here.
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    } else if (response > randomNumber){
+      alert('Your guess is to high');
+    }
+    else {
+      alert('You answered incorrect');
+      guesses -= 1;
+      alert('guesses left:' + guesses);
+    }
+  }
+  alert('Thanks for guessing');
+  //right here
 }
 
 question6();
@@ -150,4 +145,4 @@ function question7(){
 
 }
 
-question7();
+// question7();
